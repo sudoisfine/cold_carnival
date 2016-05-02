@@ -36,8 +36,20 @@ $title-spacing: 11px;
   letter-spacing: $title-spacing;
   color: white;
 }
-a {
+a:link {
   color: #fff;
+}
+
+a:active {
+  color: #66d9ff;
+}
+
+a:visited {
+  color: #fff;
+}
+
+a:hover {
+  color: #000;
 }
 
 body {
