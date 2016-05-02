@@ -25,6 +25,21 @@ font-style: normal;
 $title-font: 'DINNeuzeitGroteskStd-Light', sans-serif;
 $title-spacing: 11px;
 
+
+.navbar.transparent.navbar-fixed-top .navbar-inner {
+  background-color: transparent;
+  background: transparent;
+  border-color: transparent;
+  font-family: $title-font;
+}
+.navbar-brand {
+  letter-spacing: $title-spacing;
+  color: white;
+}
+a {
+  color: #fff;
+}
+
 body {
   background-color: transparent;
   background:url('cc-bg.png');
