@@ -18,7 +18,7 @@ class ReleasesControllerTest < ActionController::TestCase
 
   test "should create release" do
     assert_difference('Release.count') do
-      post :create, release: { artist_id: @release.artist_id, name: @release.name }
+      post :create, release: { artist_id: @release.artist_id, date: @release.date, description: @release.description, name: @release.name, tracklist: @release.tracklist }
     end
 
     assert_redirected_to release_path(assigns(:release))
@@ -35,7 +35,7 @@ class ReleasesControllerTest < ActionController::TestCase
   end
 
   test "should update release" do
-    patch :update, id: @release, release: { artist_id: @release.artist_id, name: @release.name }
+    patch :update, id: @release, release: { artist_id: @release.artist_id, date: @release.date, description: @release.description, name: @release.name, tracklist: @release.tracklist }
     assert_redirected_to release_path(assigns(:release))
   end
 

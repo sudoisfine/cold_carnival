@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   resources :releases
+  resources :releases
+  resources :releases
+  resources :releases
   resources :artists
   get 'chill/main'
 

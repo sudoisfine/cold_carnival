@@ -6,7 +6,10 @@
   <thead>
     <tr>
       <th>Name</th>
+      <th>Date</th>
       <th>Artist</th>
+      <th>Tracklist</th>
+      <th>Description</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -15,7 +18,10 @@
     <% @releases.each do |release| %>
       <tr>
         <td><%= release.name %></td>
+        <td><%= release.date %></td>
         <td><%= release.artist %></td>
+        <td><%= release.tracklist %></td>
+        <td><%= release.description %></td>
         <td><%= link_to 'Show', release %></td>
         <td><%= link_to 'Edit', edit_release_path(release) %></td>
         <td><%= link_to 'Destroy', release, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -6,8 +6,23 @@
 </p>
 
 <p>
+  <strong>Date:</strong>
+  <%= @release.date %>
+</p>
+
+<p>
   <strong>Artist:</strong>
   <%= @release.artist %>
+</p>
+
+<p>
+  <strong>Tracklist:</strong>
+  <%= @release.tracklist %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @release.description %>
 </p>
 
 <%= link_to 'Edit', edit_release_path(@release) %> |

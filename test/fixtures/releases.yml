@@ -2,8 +2,14 @@
 
 one:
   name: MyString
+  date: 2016-05-15
   artist_id: 
+  tracklist: MyText
+  description: MyText
 
 two:
   name: MyString
+  date: 2016-05-15
   artist_id: 
+  tracklist: MyText
+  description: MyText
